@@ -24,7 +24,7 @@ git clone https://github.com/aponsero/HPC_DiamondX.git
 
 Diamond provides an easy and fast way to create a custom protein database of reference.
 
-### 1. Upload to the working directory a protein fasta file. **Beware, make sure to remove any extra spaces or trailing spaces from the file. Extra spaces or incorrectly formated fasta file will stop the database building job**
+### 1. Upload to the working directory a protein fasta file. **Beware, make sure to remove any extra spaces or trailing spaces from the file. Extra spaces or incorrectly formated fasta file will stop the database building job**
 
 ### 2. Request an interactive node to run the command. In Puhti CSC:
 
