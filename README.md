@@ -48,13 +48,15 @@ If the command worked, you should now have a NAME_DATABASE.dmnd file created.
 
 Inputs and output files:
 
-[IN_DIR]= Input directory with the fasta samples to process
-[OUT_DIR]= Output directory where to save the diamond output
+- [IN_DIR]= Input directory with the fasta samples to process
+
+- [OUT_DIR]= Output directory where to save the diamond output
 
 Diamond configurations:
 
-[DB]= custom or non-custom diamond database to use
-[MAX_TAR]= max targets match per query
+- [DB]= custom or non-custom diamond database to use
+
+- [MAX_TAR]= max targets match per query
 
 ### 5. Modify the list_to_process.txt file.
 
