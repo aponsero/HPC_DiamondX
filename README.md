@@ -42,7 +42,7 @@ diamond makedb --in [my_references.faa] -d [NAME_DATABASE] -p 4
 
 If the command worked, you should now have a NAME_DATABASE.dmnd file created.
 
-** CSC has some database pre-indexed, see https://docs.csc.fi/apps/diamond/ for more informations**
+**CSC has some database pre-indexed, see https://docs.csc.fi/apps/diamond/ for more informations**
 
 4. Edit the config.sh file as followed:
 
