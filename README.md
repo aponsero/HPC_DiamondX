@@ -75,3 +75,8 @@ Submit the jobs as:
 ./Submit_Diamond.sh
 ```
 
+
+
+
+# To do 
+filtering step to calculate relative abundance of protein hits
