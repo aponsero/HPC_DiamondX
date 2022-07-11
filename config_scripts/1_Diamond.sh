@@ -4,7 +4,7 @@
 #SBATCH --output=errout/outputr%j.txt
 #SBATCH --error=errout/errors_%j.txt
 #SBATCH --partition=small
-#SBATCH --time=10:00:00
+#SBATCH --time=01:00:00
 #SBATCH --ntasks=1
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=40
@@ -33,7 +33,7 @@ fi
 # run diamond
 RESULTS="$OUT_DIR/${SAMPLE}_diamond.txt"
 INPUT="$IN_DIR/${SAMPLE}"
-diamond blastx --query $INPUT -d $DB --out $RESULTS -p 4 --max-target-seqs $MAX_TAR
+diamond blastx --query $INPUT -d $DB --out $RESULTS --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore full_qseq -p 4 --max-target-seqs $MAX_TAR
 
 
 # echo for log

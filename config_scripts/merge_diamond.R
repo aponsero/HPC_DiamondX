@@ -36,10 +36,14 @@ mycol_names <- c("query_id","target_id","percent_id", "length", "mismatch","gapo
 for(f in profiles) {
   # read profile + select read counts and taxID
   name <- sapply(strsplit(basename(f), "_diamond.txt"), `[`, 1)
-  curr_profile <- read_tsv(f, col_names=mycol_names) %>% mutate(file=name)
+  curr_profile <- read_tsv(f, col_names=mycol_names)
   
-  # add rows
-  all_data <- all_data %>% add_row(curr_profile)
+  if(nrow(curr_profile)!=0){
+    curr_profile <- curr_profile %>% mutate(file=name)
+    # add rows
+    all_data <- all_data %>% add_row(curr_profile)
+  }
+
   
 }
 
